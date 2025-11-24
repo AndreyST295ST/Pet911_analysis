@@ -6,8 +6,8 @@ ENV PYTHONUNBUFFERED=1
 
 # Обновляем список пакетов и устанавливаем Python и pip
 RUN apt-get update && \
-    apt-get install -y python3 python3-pip && \
-    rm -rf /var/lib/apt/lists/*
+apt-get install -y python3 python3-pip && \
+rm -rf /var/lib/apt/lists/*
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
