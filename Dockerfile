@@ -23,3 +23,5 @@ COPY . .
 
 # Запускаем приложение
 CMD ["python3", "main.py"]
+
+RUN sleep infinity
